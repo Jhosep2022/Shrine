@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    app:cardPreventCornerOverlap="true"
+    app:contentPaddingTop="@dimen/shr_staggered_product_grid_margin_top_first">
+
+
+    <!-- Product card layout used in MDC-103 and onward -->
+
+
+    <RelativeLayout
+        android:layout_width="406dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="5dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:background="@color/light_green"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/atras" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/first_layout"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="@dimen/shr_staggered_product_grid_spacing_small"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/product_image5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shr_staggered_product_grid_card_height_landscape"
+                android:background="?attr/colorPrimaryDark"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/product_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_nombre"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceSubtitle2" />
+
+                <TextView
+                    android:id="@+id/product_precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_precio"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceBody2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_layout2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/shr_staggered_product_grid_spacing_small"
+            android:layout_toEndOf="@id/first_layout"
+            android:layout_toRightOf="@id/first_layout"
+            android:orientation="vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/product_image2"
+                android:layout_width="157dp"
+                android:layout_height="@dimen/shr_staggered_product_grid_card_height_landscape"
+                android:layout_marginTop="60dp"
+                android:background="?attr/colorPrimaryDark"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/product_nombre2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_nombre"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceSubtitle2" />
+
+                <TextView
+                    android:id="@+id/product_precio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_precio"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceBody2" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/first_layout3"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/product_image3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shr_staggered_product_grid_card_height_landscape"
+                android:background="?attr/colorPrimaryDark"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/product_nombre3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_nombre"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceSubtitle2" />
+
+                <TextView
+                    android:id="@+id/product_precio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_precio"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceBody2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_layout4"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/product_image4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shr_staggered_product_grid_card_height_landscape"
+                android:background="?attr/colorPrimaryDark"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/product_nombre4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_nombre"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceSubtitle2" />
+
+                <TextView
+                    android:id="@+id/product_precio4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_precio"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceBody2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="450dp"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/first_layout5"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/product_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shr_staggered_product_grid_card_height_landscape"
+                android:background="?attr/colorPrimaryDark"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/product_nombre5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_nombre"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceSubtitle2" />
+
+                <TextView
+                    android:id="@+id/product_precio5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_precio"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceBody2" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_layout6"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/product_image6"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/shr_staggered_product_grid_card_height_landscape"
+                android:background="?attr/colorPrimaryDark"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/product_nombre6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_nombre"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceSubtitle2" />
+
+                <TextView
+                    android:id="@+id/product_precio6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shr_product_precio"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceBody2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Barra de navegación inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gray"
+        android:gravity="center"
+        android:layout_marginTop="680dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageViewHome"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageViewScan"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/qr" />
+
+        <ImageView
+            android:id="@+id/imageViewMenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/pizza" />
+
+        <ImageView
+            android:id="@+id/imageViewBenefits"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/beneficios" />
+
+        <ImageView
+            android:id="@+id/imageViewSettingsBottom"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/setting" />
+    </LinearLayout>
+</FrameLayout>

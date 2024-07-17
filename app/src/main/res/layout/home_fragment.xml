@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:name=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginPageBackgroundColor">
+
+    <!-- Barra superior -->
+
+
+    <!-- Contenido principal -->
+    <LinearLayout
+        layout="@+id/relativeLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Imagen central -->
+
+        <!-- Texto descriptivo -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fondo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Pizzeria Zarrelle: Encuentra tu combo perfecto"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:text="Personalízalos como más te gusta."
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@color/dark_green"
+                android:text="Pídelo aquí"
+                android:textColor="@android:color/white"
+                app:rippleColor="#68E26D" />
+
+            <Button
+                android:id="@+id/buttonJoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_green"
+                android:text="Únete"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/light_green"
+        android:padding="16dp">
+
+        <!-- Texto de Bienvenida -->
+        <TextView
+            android:id="@+id/textViewWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Bienvenido (a)"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Icono de Perfil -->
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/perfil" />
+
+        <!-- Icono de Configuración -->
+        <ImageView
+            android:id="@+id/imageViewSettings"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/salir" />
+    </RelativeLayout>
+
+    <!-- Barra de navegación inferior -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_gray"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imageViewHome"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageViewScan"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/qr" />
+
+        <ImageView
+            android:id="@+id/imageViewMenu"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/pizza" />
+
+        <ImageView
+            android:id="@+id/imageViewBenefits"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/beneficios" />
+
+        <ImageView
+            android:id="@+id/imageViewSettingsBottom"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="32dp"
+            android:src="@drawable/setting" />
+    </LinearLayout>
+</RelativeLayout>
